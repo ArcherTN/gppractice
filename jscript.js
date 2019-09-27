@@ -19,13 +19,21 @@ $(document).ready(function()
         let data=dataField.value;
         let time=timeField.value;
         let extraNotes=notes.value;
-        console.log(userName);
-        console.log(userSurname);
-        console.log(data);
-        console.log(time);
-        
+        console.log('Name: '+userName);
+        console.log('Surname: '+userSurname);
+        console.log('Data: '+data);
+        console.log('Time: '+time);
     }
     submit.onclick=saveRecord;
+});
+    //     db.transaction(function(x)
+    //     {
+    //         x.executionSql('INSERT INTO item VALUES(?,?,?,?))
+
+    //     }
+        
+    // }
+    
     
     // form.onsubmit=function(e)
     // {
@@ -36,4 +44,4 @@ $(document).ready(function()
     
     //     }
     // }
-});
+
