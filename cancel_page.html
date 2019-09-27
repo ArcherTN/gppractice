@@ -3,14 +3,22 @@
 
 <head>
     <title>GP Appt Booking</title>
+    <link rel="stylesheet" type="text/css" href="./CSS GP Practice.css" />
+    
 
 </head>
 <body>
+    <div class="nav">
+        <ul id="nav_elements">
+            <li><a href="./home.html">Add Appointment</a></li>
+            <li><a href="./cancel_page.html">Cancel Appointment</a></li>
+            <li><a href="./lookup.html">Lookup Info</a></li>
+            <li><a href="./prescriptions.html">Record Prescriptions</a></li>
+        </ul>
+    </div>
+    
     <div class="form">
-        <form>
-            <label for="gp">GP:</label>
-                <input id="gp" type="radio"></input>
-                <br />
+        <form method="POST" action="./sent.html" target="_blank">
             <label for="firstname">First Name:</label>
                 <input id="firstname" type="text"></input>
                 <br />
@@ -23,11 +31,8 @@
             <label for="time">Appointment Time:</label>
                 <input id="time" type="time"></input>
                 <br />
-            <label for="notes">Notes:</label>
-                <input id="notes" type="text"></input>
-                <br />
-            <label for="submit">SUBMIT</label>
-                <input id="submit" type="submit"></input>
+            <label for="submit">CANCEL APPOINTMENT:</label>
+                <input id="submit" type="submit"><script src="./jscript.js" /></input>
         </form>
     </div>
 
