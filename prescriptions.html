@@ -1,0 +1,43 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <title>GP Appt Booking</title>
+    <link rel="stylesheet" type="text/css" href="./CSS GP Practice.css" />
+    
+
+</head>
+<body>
+    <div class="nav">
+        <ul id="nav_elements">
+            <li><a href="./home.html">Add Appointment</a></li>
+            <li><a href="./cancel_page.html">Cancel Appointment</a></li>
+            <li><a href="./lookup.html">Lookup Info</a></li>
+            <li><a href="./prescriptions.html">Record Prescriptions</a></li>
+        </ul>
+    </div>
+    <div class="form">
+        <form method="POST" action="./sent.html" target="_blank">
+            <label for="gp">GP:</label>
+                <input id="gp" type="radio"></input>
+                <br />
+            <label for="med_firstname">Patient First Name:</label>
+                <input id="firstname" type="text"></input>
+                <br />
+            <label for="med_surname">Patient Surname:</label>
+                <input id="surname" type="text"></input>
+                <br />
+            <label for="quant">Appointment Date:</label>
+                <input id="date" type="date"></input>
+                <br />
+            <label for="notes">Notes:</label>
+                <input id="notes" type="text"></input>
+                <br />
+            <label for="submit">SUBMIT</label>
+                <input id="submit" type="submit"><script src="./jscript.js" /></input>
+        </form>
+    </div>
+
+</body>
+
+</html>
